@@ -8,8 +8,8 @@ int main(void) {
 
     int *arr = malloc(*a * sizeof(int));
     for (int i = 0; i < 5; i++) {
-        *arr = i + 1;
-        printf("%d ", *arr);
+        *(arr+i) = i + 1;
+        printf("%d ", *(arr+i));
     }
     printf("\n");
 
